@@ -6,3 +6,4 @@ Hands-on modules for building a customer support agent on Amazon Bedrock AgentCo
 |---|---|
 | [00 — Setup](00-setup/README.md) | AWS identity, workstation, and tooling |
 | [01 — AgentCore Overview](01-agent-overview/README.md) | Architecture and why each AgentCore component |
+| [02 — Build an Agent](02-build-an-agent/README.md) | A local Strands agent talking to Claude on Bedrock |

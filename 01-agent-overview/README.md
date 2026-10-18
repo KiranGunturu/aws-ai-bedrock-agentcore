@@ -23,4 +23,4 @@
 
 ---
 
-**Previous:** [00 — Setup](../00-setup/README.md)
+**Previous:** [00 — Setup](../00-setup/README.md) · **Next:** [02 — Build an Agent](../02-build-an-agent/README.md)
