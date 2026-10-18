@@ -35,7 +35,7 @@ Your IAM identity needs two things:
 
 Your IAM user (or role) should have **both** `AdministratorAccess` and `AmazonBedrockMarketplaceAccess` attached:
 
-![alt text](00-setup/images/admin-user.png)
+![alt text](images/admin-user.png)
 
 ---
 
@@ -221,7 +221,7 @@ The course uses Anthropic Claude through Amazon Bedrock. Model availability and 
      --output table
    ```
 
-   ![alt text](00-setup/images/list-foundation-models.png)
+   ![alt text](images/list-foundation-models.png)
 
    A successful result confirms API access. It does **not** guarantee every specific model invocation is permitted — you'll test the selected model in Module 02.
 
@@ -235,7 +235,7 @@ The course uses Anthropic Claude through Amazon Bedrock. Model availability and 
      --output table
    ```
 
-   ![alt text](00-setup/images/inferenceProfileids.png)
+   ![alt text](images/inferenceProfileids.png)
 
 > [!TIP]
 > In Module 02 you'll configure a model ID from this list. The course uses a Region-specific inference profile ID, e.g. `us.anthropic.claude-sonnet-4-6`.
