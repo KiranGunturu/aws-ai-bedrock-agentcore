@@ -1,0 +1,18 @@
+# Core AWS SDK
+boto3>=1.38.0
+
+# Amazon Bedrock AgentCore SDK
+bedrock-agentcore==1.22.0
+
+# Agent framework (used throughout the course)
+strands-agents==1.54.0
+
+# Streamlit chat UI
+streamlit==1.46.0
+streamlit-oauth==0.1.4
+
+# Utilities
+python-dotenv==1.1.0
+
+# SigV4-signing curl for authenticated API tests (Module 05)
+awscurl==0.44
