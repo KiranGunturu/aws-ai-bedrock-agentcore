@@ -235,7 +235,7 @@ The course uses Anthropic Claude through Amazon Bedrock. Model availability and 
      --output table
    ```
 
-   ![alt text](images/inferenceProfileids.png)
+   ![alt text](images/inferenceProfileId.png)
 
 > [!TIP]
 > In Module 02 you'll configure a model ID from this list. The course uses a Region-specific inference profile ID, e.g. `us.anthropic.claude-sonnet-4-6`.
