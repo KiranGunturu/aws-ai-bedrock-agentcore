@@ -57,6 +57,21 @@ Ask "Where is my package for ORD-1001?" and you'll see her call `get_order` firs
 
 Ask the return policy question and you'll see no tool calls at all, because the answer is already in the prompt.
 
+## Local agent execution
+
+Here's a real run. I asked Maya where my package for ORD-1001 is:
+
+![Local agent execution](images/local-agent-run.png)
+
+You can follow every step in the output:
+
+1. botocore picks up credentials from `~/.aws/credentials`.
+2. Maya calls `get_order('ORD-1001')` and gets back the order, including tracking number `UPS1234567890`.
+3. She uses that number to call `check_carrier_tracking`.
+4. Claude puts the two results together into the final answer: delivered on Sep 6, left at the front door.
+
+Two tool calls, one question, and no hand-written logic telling it to do that.
+
 ## Try a different model
 
 You can switch models without touching the code:
