@@ -1,4 +1,4 @@
-# Module 00 — Prerequisites
+# 00 — Setup
 
 Set up your AWS identity, local workstation, and tooling before starting the AgentCore course.
 
@@ -99,7 +99,7 @@ git clone https://github.com/KiranGunturu/aws-ai-bedrock-agentcore.git
 cd aws-ai-bedrock-agentcore
 ```
 
-Already cloned? Update instead:
+Update instead:
 
 ```bash
 git pull
@@ -238,7 +238,7 @@ The course uses Anthropic Claude through Amazon Bedrock. Model availability and 
    ![alt text](images/inferenceProfileId.png)
 
 > [!TIP]
-> In Module 02 you'll configure a model ID from this list. The course uses a Region-specific inference profile ID, e.g. `us.anthropic.claude-sonnet-4-6`.
+> Later, you'll configure a model ID from this list. The course uses a Region-specific inference profile ID, e.g. `us.anthropic.claude-sonnet-4-6`.
 
 ### Step 6 — Verify the complete setup
 
