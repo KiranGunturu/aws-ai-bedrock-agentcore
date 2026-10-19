@@ -456,4 +456,4 @@ aws ssm delete-parameter --name /maya/runtime_arn
 
 ---
 
-**Previous:** [02 — Build an Agent](../02-build-an-agent/README.md)
+**Previous:** [02 — Build an Agent](../02-build-an-agent/README.md) · **Next:** [04 — Knowledge Base](../04-knowledge-base/README.md)
