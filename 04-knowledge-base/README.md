@@ -259,4 +259,4 @@ aws ssm delete-parameter --name /maya/kb_num_results
 
 ---
 
-**Previous:** [03 — Deploy to AgentCore Runtime](../03-agentcore-runtime/README.md)
+**Previous:** [03 — Deploy to AgentCore Runtime](../03-agentcore-runtime/README.md) · **Next:** [05 — AgentCore Gateway](../05-agentcore-gateway/README.md)

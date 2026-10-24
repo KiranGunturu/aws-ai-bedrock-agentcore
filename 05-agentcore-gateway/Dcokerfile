@@ -1,0 +1,30 @@
+# Maya — ShopSmart AI Customer Support Agent
+# Module 05: Gateway — adds tools/ directory, no memory yet
+# Multi-stage build for a lean production image.
+
+# ── Stage 1: dependency builder ───────────────────────────────────────────────
+FROM python:3.11-slim AS builder
+
+WORKDIR /build
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+
+# ── Stage 2: runtime image ────────────────────────────────────────────────────
+FROM python:3.11-slim AS runtime
+
+RUN useradd --create-home --shell /bin/bash maya
+WORKDIR /app
+
+COPY --from=builder /install /usr/local
+
+# Copy agent source
+COPY --chown=maya:maya agent.py .
+COPY --chown=maya:maya config.py .
+
+USER maya
+
+EXPOSE 8080
+
+CMD ["python", "agent.py"]
